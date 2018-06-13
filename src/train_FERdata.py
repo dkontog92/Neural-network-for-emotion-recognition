@@ -52,9 +52,9 @@ def get_FER2013_data(datadir, labels, validation_ratio=None, mirror=True):
     
     return data, mean
 
-os.chdir("..\\datasets\\public")
+os.chdir("../datasets/FER2013")
 datadir = os.getcwd()
-labels = pd.read_csv(datadir + '\\labels_public.txt')
+labels = pd.read_csv(datadir + '/labels_public.txt')
 
 
 data, mean = get_FER2013_data(datadir, labels, validation_ratio=0.10,mirror = False)
